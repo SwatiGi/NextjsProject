@@ -1,0 +1,20 @@
+import React from 'react'
+import Link from "next/link"
+export default function ProductPage({ params }) {
+  let id = params;
+ 
+  return (
+      <div className='text-4xl text-pink-500'>
+      <h1>Welcome to the Products Store</h1>
+      <Link href='/product'>Product</Link>
+      <br></br>
+      <Link href='/product/1'>1</Link>
+      <br></br>
+      
+      <Link href='/product/2'>2</Link>
+      
+      
+      </div>
+  )
+}
+
