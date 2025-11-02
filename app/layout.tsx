@@ -25,8 +25,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+
       >
+        <header style={{ background: "green", width: "100%", padding: "2%", height: "20%" }}>
+          <h1 className="text-2xl text-white text-center">Header</h1>
+        </header>
+        <footer className="fixed w-full bottom-0 bg-gray-900 text-gray-300 ">
+
+
+          {/* Footer Bottom */}
+          <div className="  p-4 text-center text-xl text-white">
+            Footer
+          </div>
+        </footer>
+
         {children}
       </body>
     </html>
